@@ -16,6 +16,6 @@ RUN apt-get install -y \
     unzip \
     python3-dev
 
-RUN bash run.sh
+RUN bash run.sh && pip3 install av --no-binary av
 
 CMD ["python3", "RUN.py"]
