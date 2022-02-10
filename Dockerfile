@@ -7,6 +7,7 @@ RUN apt-get install -y \
     bash \
     gcc \
     zip \ 
+    ffmpeg \
     wget \
     wkhtmltopdf \
     neofetch \
@@ -14,7 +15,8 @@ RUN apt-get install -y \
     git \
     jq \
     unzip \
-    python3-dev
+    python3-dev \
+    p7zip-full
 
 RUN bash run.sh && pip3 install av --no-binary av
 
